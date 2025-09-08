@@ -2,136 +2,192 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<title>Miembros</title>
+		 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 		<link rel="stylesheet" href="style/style.css">
-		<title>Miembro</title>
 	</head>
-	<body>
-		<div class="top-area">
-			<header>
-				<h1>DEMASEBSA <br />Desarollo y Manufactura de Semiconductores del Bajio S.A. de C.V.</h1>
-				<h2>Division de Desarollo e Investigacion</h2>
-			</header>
-			<section>
-				<nav class="menu-global-lateral">
-					<ul>
-						<a href="index.html" title="Ir a inicio" target="_blank"><li class="menu-global-item">Inicio</li></a>
-						<a href="investigacion.html" title="Ir a investigacion" target="_blank"><li class="menu-global-item">Investigacion</li></a>
-						<a href="miembro.html" title="Ir a miembro" target="_blank"><li class="menu-global-item">Miembro</li></a>
-						<a href="contacto.html" title="Ir a contacto" target="_blank"><li class="menu-global-item">Contacto</li></a>
-					</ul>
-				</nav>
-			</section>
-			<footer>
-				<div class="page-style selector">
-					<label for="tipo">Apariencia</label>
-					<select name="tipo" id="tipo">
-							<option value="claro">Claro</option>
-							<option value="oscuro">Oscuro</option>
-					</select>
+	<body data-bs-theme="dark" class="theme-change">
+		<div class="col">
+			<div class="row header-start">
+				<!-- Overlay content -->
+				<div class="position-absolute top-0 start-0 z-3 w-100 d-flex align-items-center p-3">
+					<div class="me-3">
+						<img class="" src="image/icon/logo.png" alt="Logo" width="10%" height="10%">
+						<h1>DEMASEBSA</h1>
+					</div>
 				</div>
-			</footer>
-		</div>
-		<div class="main-area">
-			<div class="left-area">
-			<header>
-				<h2>Indice</h2>
-			</header>
-			<section>
-			
-			</section>
-			<footer>
-			
-			</footer>
+
+				<!-- Carousel -->
+				<div id="carouselExample" class="carousel slide z-1">
+					<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="image/banner/board.jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="image/banner/circuit.jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="image/banner/hdd.jpg" class="d-block w-100" alt="...">
+					</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
 			</div>
-			<div class="center-area">
-			<header>
-			
-			</header>
-			<section>
-				<table>
-					<tr>
-						<th>Nombre</th>
-						<th>Grado academico</th>
-						<th>Correo</th>
-						<th>Especialidad</th>
-						<th>Foto</th>
-					</tr>
-					<tr>
-						<td>Paulina</td>
-						<td>Phd</td>
-						<td><a class="correo" href="mailto:21030374@itcelaya.edu.mx">21030374@itcelaya.edu.mx</a></td>
-						<td>Ingenieria Industrial</td>
-						<td>
-							<figure>
-								<img src="image/investigadores/lovelace.png" alt="owo" width="250" height="200">
-								<figcaption>Foto Paulina</figcaption>
-							</figure>
-						</td>
-					</tr>
-					<tr>
-						<td>Alberto</td>
-						<td>Phd</td>
-						<td><a class="correo" href="mailto:21030374@itcelaya.edu.mx">21025467@itcelaya.edu.mx</a></td>
-						<td>Ingenieria Electronica</td>
-						<td>
-							<figure>
-								<img src="image/investigadores/turing.jpg" alt="owo" width="250" height="200">
-								<figcaption>Foto Alberto</figcaption>
-							</figure>
-						</td>
-					</tr>
-					<tr>
-						<td>Angel</td>
-						<td>Phd</td>
-						<td><a class="correo" href="mailto:21030374@itcelaya.edu.mx">21025467@itcelaya.edu.mx</a></td>
-						<td>Ingeniria en Sistemas</td>
-						<td>
-							<figure>
-								<img src="image/investigadores/neumann.jpg" alt="owo" width="250" height="200">
-								<figcaption>Foto Angel</figcaption>
-							</figure>
-							
-						</td>
-					</tr>
-				</table>
-			</section>
-			<footer>
-			
-			</footer>
+			<div class="row start-menu">
+				<nav class="navbar navbar-expand-lg bg-body-tertiary">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="index.html">Inicio</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="/v0.3/investigacion.html">Investigación</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/v0.3/aprender.html">Aprender</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/v0.3/miembro.html">Miembro</a>
+								</li>
+								<li class="nav-item">
+									<form>
+										<button type="button" onclick="change()">Cambiar Tema</button>
+									</form>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
 			</div>
-			<div class="right-area">
-			<header>
-				<h2>Ordenes</h2>
-			</header>
-			<section>
-				<iframe src="https://www.rexqualis.com/"  width="100%" height="800px"></iframe>
-			</section>
-			<footer>
-			
-			</footer>
+			<div clas="row">
+				&nbsp;
+			</div>
+			<div class="row body-start">
+				<div class="body-start-header">
+					<h2>Miembros del equipo de investigación</h2>
+				</div>
+				<div class="col-2">
+				</div>
+				<div class="col-2">
+					<div class="card" style="width: 100%; height: 600px;">
+						<div class="card-body">
+							<figure>
+								<img src="image/profile/lovelace.png" class="card-img-top" alt="r3">
+							</figure>
+							<h5 class="card-title">Angel Herrera</h5>
+							<p class="card-text">Licenciatura en Ingeniería en Sistemas Computacionales</p>
+							<p class="card-text">Bachelor Degree in Mechatronic Systems Engineering</p>
+							<p class="card-text">PhD in Computer Science and Mathematics</p>
+							<a href="#" class="btn btn-primary">Ver mas...</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="card" style="width: 100%; height: 600px;">
+						<div class="card-body">
+							<figure>
+								<img src="image/profile/neumann.jpg" class="card-img-top" alt="r3">
+							</figure>
+							<h5 class="card-title">Alberto</h5>
+							<p class="card-text">Licenciatura en Ingeniería en Sistemas Computacionales</p>
+							<p class="card-text">Bachelor Degree in Computer Science</p>
+							<p class="card-text">PhD in Computer Science</p>
+							<a href="#" class="btn btn-primary">Ver mas...</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="card" style="width: 100%; height: 600px;">
+						<div class="card-body">
+							<figure>
+								<img src="image/profile/turing.jpg" class="card-img-top" alt="r3">
+							</figure>
+							<h5 class="card-title">Paulina</h5>
+							<p class="card-text">Licenciatura en Ingeniería en Sistemas Computacionales</p>
+							<p class="card-text">Bachelor Degree in Mathematics</p>
+							<p class="card-text">PhD in Applied Mathematics</p>
+							<a href="#" class="btn btn-primary">Ver mas...</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="card" style="width: 100%; height: 600px;">
+						<div class="card-body">
+							<figure>
+								<img src="image/article/r3.jpg" class="card-img-top" alt="r3">
+							</figure>
+							<h5 class="card-title">Pamayin Nekotayim</h5>
+							<p class="card-text">Bachelor Degree in Mathematics with a Minor in Physics</p>
+							<p class="card-text">Bachelor Degree in Chemistry</p>
+							<p class="card-text">PhD in Chemistry and Materials Science</p>
+							<a href="#" class="btn btn-primary">Ver mas...</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-2">
+				</div>
+			</div>
+			<div clas="row">
+				&nbsp;
+			</div>
+			<div class="row footer-start">
+				<div class="col-6">
+					<h2>Red de investigadores del Departamento de Investigación y Desarollo de "Desarollo y Manufactura de Semiconductores del Bajio S.A. de C.V. (DEMASEBSA)"</h2>
+				</div>
+				<div class="col-3">
+					<div class="row">
+						Siguenos en nuestras redes sociales
+					</div>
+					<div class="row">
+						<a href="https://www.youtube.com/watch?v=G_JfKOjwzwo&list=PLd4d2ymy06vd-UjJ80q4yjVPy2lS-cn7z&index=20">
+							<img class="x" alt="" src="image/icon/x.png" width="50px" height="50px">
+						</a>
+					</div>
+					<div class="row">
+						<a href="https://www.youtube.com/watch?v=G_JfKOjwzwo&list=PLd4d2ymy06vd-UjJ80q4yjVPy2lS-cn7z&index=20">
+							<img alt="" src="image/icon/linkedin.png" width="50px" height="50px">
+						</a>
+					</div>
+					<div class="row">
+						<a href="https://www.youtube.com/watch?v=G_JfKOjwzwo&list=PLd4d2ymy06vd-UjJ80q4yjVPy2lS-cn7z&index=20">
+							<img alt="" src="image/icon/telegram.png" width="50px" height="50px">
+						</a>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="row">
+						Volver al inicio
+					</div>
+					<div class="row">
+						<a href="index.html">Inicio</a>
+					</div>
+					<div class="row">
+						Mas información
+					</div>
+					<div class="row">
+						<a href="legal.html">Informacion legal</a>
+					</div>
+					<div class="row">
+						<a href="contacto.html">Contacto</a>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="bottom-area">
-			<header>
-				<h2>DEMASEBSA </h2>
-			</header>
-			<section>
-				<h3>Redes sociales</h3>
-				<ul>
-					<a href="https://en.wikipedia.org/wiki/Twitter" target="_blank" class="logo"><li><img alt="Logo de X" src="image/logo/x.png" width="50px" height="50px"></li></a>
-					<a href="https://en.wikipedia.org/wiki/Telegram_(software)" target="_blank" class="logo"><li><img alt="Logo de Telegram" src="image/logo/telegram.png" width="50px" height="50px"></li></a>
-					<a href="https://en.wikipedia.org/wiki/LinkedIn" target="_blank" class="logo"><li><img alt="Logo de LinkedIn" src="image/logo/linkedin.png" width="50px" height="50px"></li></a>
-				</ul>
-				<br />
-			</section>
-			<footer>
-				<h3><br />Informacion legal</h3>
-				<ul>
-					<a href="" target="_blank" class="correo"><li>Acerca de nosotros</li></a>
-					<a href="" target="_blank" class="correo"><li>Politica de privacidad</li></a>
-				</ul>
-			</footer>
+		<div class="alert alert-warning alert-dismissible fade show" role="alert">
+		  <strong>Al continuar aceptas las cookies generadas por el sitio.</strong>
+		  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+		<script src="script/script.js"></script>
 	</body>
 </html>
